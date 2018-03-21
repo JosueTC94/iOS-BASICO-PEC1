@@ -41,13 +41,14 @@ class CalculatorViewController: UIViewController {
         let amount = initialAmountSlider.value
         let interest = interestRateStepper.value / 100
         let years = yearsStepper.value
-        finalAmountLabel.text = String(format: "%.2f", Services.calculateFinalAmount(ForAmount: amount, WithInterest: interest, AndYears: years))
+        finalAmountLabel.text = "Final amount:" + String(format: "%.2f", Services.calculateFinalAmount(ForAmount: amount, WithInterest: interest, AndYears: years)) + "€"
     }
     // END-UOC-7.2
     
     // BEGIN-UOC-7.3
-    // Establecimiento de los valores iniciales y el resultado asociado
+    // Establecimiento de los valores iniciales y la cantidad calculada inicialmente
     override func viewDidLoad() {
+        super.viewDidLoad()
         initialAmountSlider.value = 100
         initialAmountLabel.text = "Initial amount:" + String(format: "%.0f", initialAmountSlider.value) + "€"
         interestRateStepper.value = 1

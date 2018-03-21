@@ -9,11 +9,13 @@ import UIKit
 
 class AuthenticationViewController: UIViewController, UITextFieldDelegate {
     // BEGIN-UOC-4
+    // Outlets
     @IBOutlet weak var firstField: UITextField!
     @IBOutlet weak var secondField: UITextField!
     @IBOutlet weak var thirdField: UITextField!
     @IBOutlet weak var fourthField: UITextField!
     
+    // Función nextButton ==> Concatenamos valores individuales de los campos de texto y validamos el código
     @IBAction func nextButton(_ sender: UIButton) {
         print("nextButton pressed")
         print("firstField: \(firstField.text!)")
@@ -32,6 +34,7 @@ class AuthenticationViewController: UIViewController, UITextFieldDelegate {
             Utils.show(Message: "Sorry, the entered code is not valid", WithTitle: "Error", InViewController: self)
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         initTextFields()
