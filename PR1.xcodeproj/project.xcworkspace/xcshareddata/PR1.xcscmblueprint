@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1B7B5A755D1132ACC9E835F82E13057A3AE8A12F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E84F4C55A4320B5688AC9D9D0ABFE738FE5FE5AA" : 9223372036854775807,
+    "1B7B5A755D1132ACC9E835F82E13057A3AE8A12F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9315BA0D-81D6-4107-85C8-AF7487E1BD70",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E84F4C55A4320B5688AC9D9D0ABFE738FE5FE5AA" : "uoc-2017-pac\/",
+    "1B7B5A755D1132ACC9E835F82E13057A3AE8A12F" : "uoc2018\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PR1",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Practica1\/Enunciat\/PR1.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:xpereta\/uoc2018.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1B7B5A755D1132ACC9E835F82E13057A3AE8A12F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:xpereta\/uoc-2017-pac.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E84F4C55A4320B5688AC9D9D0ABFE738FE5FE5AA"
+    }
+  ]
+}
