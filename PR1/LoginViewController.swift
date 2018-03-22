@@ -27,7 +27,7 @@ class LoginViewController: UIViewController {
             performSegue(withIdentifier: "SegueToAuthentication", sender: self)
         }else{
             // Login incorrecto, mostramos mensaje de error
-            Utils.show(Message: "Sorry, the username and password are invalid", WithTitle: "Title", InViewController: self)
+            Utils.show(Message: "Sorry, the username and password are invalid", WithTitle: "Login failed", InViewController: self)
         }
         
     }

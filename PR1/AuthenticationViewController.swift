@@ -27,42 +27,29 @@ class AuthenticationViewController: UIViewController, UITextFieldDelegate {
         
         let authorizationAllowed = Services.validate(code: code)
         if authorizationAllowed{
-            print("authorizationAllowed == true")
+            // Autorización permitida => true
             performSegue(withIdentifier: "SegueToMainNavigation", sender: self)
         }else{
-            print("authorizationAllowd == false")
+            // Autorización permitida => false
             Utils.show(Message: "Sorry, the entered code is not valid", WithTitle: "Error", InViewController: self)
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initTextFields()
-    }
-    
-    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool{
-        let count = (textField.text?.count) ?? 0
-        let rangeCount = range.length
-        print("current text: \(String(describing: textField.text))")
-        print("replacement text: \(string)")
-        print("count \(count)")
-        print("range \(rangeCount)")
-        print("string \(string.count)")
-        let result = count+string.count-rangeCount
-        print("newLength: \(result)")
-        if result <= 1 {
-            return true
-        }else{
-            return false
-        }
-    }
-    
-    func initTextFields(){
-        print("initTextFields")
         firstField.delegate = self
         secondField.delegate = self
         thirdField.delegate = self
         fourthField.delegate = self
+    }
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool{
+        print("text:\(String((textField.text?.count)!)), string:\(string.count), range: \(String(range.length))")
+        if (textField.text?.count)! + string.count - range.length <= 1 {
+            return true
+        }else{
+            return false
+        }
     }
     
     override func didReceiveMemoryWarning() {
